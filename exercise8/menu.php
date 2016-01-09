@@ -7,10 +7,7 @@
     <style type="text/css">
         table {
             border-collapse: collapse;
-            margin-top: 30px;
-            margin-left: 30px;
-            margin-right: 30px;
-            margin-bottom: 15px;
+            margin: 30px 30px 15px;
         }
 
         th, td {
@@ -28,11 +25,21 @@
             background-color: #d5ecff
         }
 
-        tr:first-child td:first-child { border-top-left-radius: 10px; }
-        tr:first-child td:last-child { border-top-right-radius: 10px; }
-        tr:last-child td:first-child { border-bottom-left-radius: 10px; }
-        tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+        tr:first-child td:first-child {
+            border-top-left-radius: 10px;
+        }
 
+        tr:first-child td:last-child {
+            border-top-right-radius: 10px;
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 10px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 10px;
+        }
 
         body {
             background-image: url(../images/bg.jpg);
@@ -93,6 +100,7 @@ if (isset($_POST['submit'])) {
     $stmt->close();
     $conn->close();
 
+    /** @noinspection PhpParamsInspection */
     if (count($result)) {
         $sess = true;
         loadMenu();
