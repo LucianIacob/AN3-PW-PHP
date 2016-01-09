@@ -7,7 +7,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <style type="text/css">
         body {
-            background-image: url(images/bg.jpg);
+            background-image: url(../images/bg.jpg);
             -moz-background-size: cover;
             -webkit-background-size: cover;
             background-size: cover;
